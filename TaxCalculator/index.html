@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator</title>
+   <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="Main-Container">
+      <div class="container">
+        <form id="taxForm">
+          <div class="form-group">
+            <div class="Input">
+              <div>
+                <label class="txtLabel" for="income"
+                  >Enter gross annual income
+                </label>
+                <div class="tooltip">
+                  <img src="./question.svg" alt="Question Mark"/>
+                  <span class="tooltiptext"
+                    >Gross annual income is your total salary in a year before
+                    any deductions</span
+                  >
+                </div>
+              </div>
+              <input
+              type="text"
+              class="form-control" required
+                id="income"
+                placeholder="Enter gross annual income"
+              />
+              <div class="tooltip" id="Dangertooltip">
+                <img src="./danger.svg" alt="Danger Image" id="ExclamationMark" />
+                <span id="DangertooltipText" class="tooltiptext">Please enter numbers only</span>
+              </div>
+            </div>
+
+            <div class="Input">
+              <label class="txtLabel" for="extraIncome"
+                >Enter extra income
+              </label>
+              <div class="tooltip" id="ExtraIncome">
+                <img src="./question.svg" alt="Qusetion Image" class="image" />
+                <span class="tooltiptext" id="ExtraIncomeText"
+                  >Extra income is a form of supplemental income that is in
+                  addition to your primary salary</span
+                >
+              </div>
+              <input
+              type="text"
+                class="form-control"
+                id="extraIncome"
+                placeholder="Enter extra income from other sources"
+              />
+            </div>
+
+            <div class="Input">
+              <label for="deductions">Enter age group</label>
+              <div class="tooltip" id="EnterAge">
+                <img src="./question.svg" alt="Question Image" class="image" />
+                <span class="tooltiptext" id="EnterAgeText"
+                  >An age group is the people in a place or organization who
+                  were born during a particular period of time</span
+                >
+              </div>
+              <input type="number" class="form-control" id="deductions" />
+            </div>
+            
+            <div class="Input">
+              <label for="age"
+                >Enter total applicable deductions</label
+              >
+              <div class="tooltip">
+                <img src="./question.svg" alt="Question Image" class="image" />
+                <span class="tooltiptext"
+                  >an amount or part taken away from a total expense that you do
+                  not have to pay taxes on</span
+                >
+              </div>
+              <input
+                class="form-control" required
+                id="age"
+                type="text"
+                placeholder="Add total applicable deductions"
+              />
+            </div>
+          </div>
+
+          <div class="InputBtn">
+            <button  type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="resultModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="result"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

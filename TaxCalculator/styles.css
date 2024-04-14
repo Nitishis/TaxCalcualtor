@@ -1,0 +1,165 @@
+* {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Arial Narrow", sans-serif;
+}
+
+body {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+
+.Main-Container {
+  width: 96vw;
+  height: 90vh;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 2px;
+  box-shadow: 0 0.1px 13px 0.1px #8888885c;
+}
+
+.container {
+  position: relative;
+  left: 35%;
+  top: 15%;
+  border: 2.4px solid #7b97a09b;
+  border: 2.4px solid #7b97a0b3;
+  height: 62vh;
+  width: 26vw;
+}
+
+.form-group {
+  position: relative;
+  top: 5rem;
+  left: 2.5rem;
+}
+
+.form-control {
+  height: 2.2rem;
+  width: 22rem;
+  box-sizing: border-box;
+  border-radius: 3.5px;
+  border: 2px solid #7b97a071;
+  margin: 0 1.5% 1.3% 0;
+  padding-left: 2%;
+}
+
+::placeholder {
+  color: #d3d3d3;
+}
+
+button {
+  border: none;
+  height: 2.2rem;
+  width: 22rem;
+  position: relative;
+  top: 7.5rem;
+  left: 2.5rem;
+  border-radius: 0.3em;
+  color: white;
+  background-color: rgb(96, 96, 236);
+}
+
+#ExclamationMark {
+  position: absolute;
+  left: -2.5rem;
+  top: -1rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  height: 92px;
+  width: 120px;
+  background-color: #4d5c69;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 9px;
+  position: absolute;
+  z-index: 1;
+  top: -107px;
+  left: 294%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 15%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #4d5c69 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#Dangertooltip #DangertooltipText {
+  height: 40px;
+  width: 90px;
+  position: absolute;
+  z-index: 1;
+  top: -69px;
+  left: 16px;
+}
+
+#ExtraIncome #ExtraIncomeText {
+    height: 130px;
+    width: 90px;
+    position: absolute;
+    z-index: 1;
+    top: -144px;
+    left: 53px;
+  }
+
+  #EnterAge #EnterAgeText{
+    height: 150px;
+    width: 90px;
+    position: absolute;
+    z-index: 1;
+    top: -164px;
+    left: 53px;
+  }                 
